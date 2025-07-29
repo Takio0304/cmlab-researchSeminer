@@ -1,0 +1,301 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  provides program environment
+%%  Copyright(C) 1999 by Yoshiki OTOBE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ProvidesPackage{secprogram}
+\RequirePackage{color}
+\RequirePackage{bs2yen}%% actually require only \yen command.
+%
+% フォントを変更したければここを変更せよ。
+\def\program@font{\normalfont\ttfamily}
+\def\program@title@font{\normalfont\gtfamily\sffamily}
+\def\program@size{\normalsize}
+% program環境の出力調整
+\def\programname{%
+\hspace{-3pt}\small\bfseries リ\hspace{-1.1pt}ス\hspace{-1.8pt}ト}
+\newskip\preprogramskip
+\preprogramskip=%
+   1\baselineskip plus .5\baselineskip minus .5\baselineskip
+\newskip\postprogramskip
+\postprogramskip=%
+   1\baselineskip plus .5\baselineskip minus .5\baselineskip
+\newdimen\programleftmargin \programleftmargin=0\Cwd
+\newdimen\linenowidth \linenowidth=1.5\Cwd
+%
+\newcounter{prglineno} % プログラム環境の行番号
+\newcounter{prglastlineno} % 直前プログラム環境の最終行番号
+\newcounter{program}[section]% program リスト番号。節ごと
+\def\theprogram{\fontseries{m}\selectfont%
+    \ifnum\c@section>\z@\thesection\fi\@arabic\c@program}
+\def\theprogramref{\thesection\@arabic\c@program}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% program環境のヘッダとフッタ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\@makeprogramheader#1{% #1: caption
+  \bgroup
+  \dimen0=\linewidth
+  \setbox0=\hbox{ \hspace{-10pt} \raisebox{5pt}{ \normalsize
+    \ \programname\ {\textsf{\theprogram}}%
+    \ {\color[gray]{.4} ●\ } 
+    {\program@title@font #1}\ }}
+  \advance\dimen0 -\programleftmargin
+  \moveright\programleftmargin
+  \vbox{\hsize=\dimen0
+    
+    \copy0
+    \hrule width \dimen0 height .8pt depth 0pt
+  }%
+  \egroup
+  \nopagebreak
+}
+\def\@makeprogramfoot{%
+  \nopagebreak
+  \bgroup
+  \nointerlineskip
+  \dimen0=\linewidth
+  \setbox0=\hbox{M}
+  \dimen1=\baselineskip
+  \advance\dimen1-\ht0
+  \vskip\dimen1
+  \advance\dimen0 -\programleftmargin
+  \moveright\programleftmargin
+  \vbox{%
+    \hrule width \dimen0 height 1pt depth 0pt
+  }%
+  \egroup
+}
+%
+\def\@makeprogramlayout{%
+  \program@font\program@size
+  \baselineskip=.65\baselineskip
+  \spaceskip=\z@
+  \parfillskip=\@flushglue % 段落最後の水平グルー = 0pt plus 1fil
+  \parskip=\z@ % 段落間追加グルー = 0pt
+  \parindent=\z@ % 段落字下げ = 0pt
+  \leftskip=\programleftmargin % 段落左側グルー
+  \rightskip=\z@%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ここから先は、もし詳しい知識がないのならば、変更は危険である
+%% Yoshiki OTOBE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begingroup
+  \catcode`\/=0   \catcode`\\=13
+  /gdef/verbh@@k{/catcode`/\=/active /let\=/yen}
+/endgroup
+\begingroup
+\catcode`\ =\active%
+\catcode`|=0 \catcode`[= 1
+\catcode`]=2 \catcode`\{=12 \catcode`\}=12
+\catcode`\\=13
+%% full header and footer environment
+|gdef|@xprogram#1\end{program}[#1|end[program]]
+|gdef|@sxprogram#1\end{program*}[#1|end[program*]]
+|gdef|@xnprogram#1\end{nprogram}[#1|end[nprogram]]
+|gdef|@sxnprogram#1\end{nprogram*}[#1|end[nprogram*]]
+|gdef|@xcprogram#1\end{cprogram}[#1|end[cprogram]]
+|gdef|@sxcprogram#1\end{cprogram*}[#1|end[cprogram*]]
+%% non-header environment
+|gdef|@xnhprogram#1\end{nhprogram}[#1|end[nhprogram]]
+|gdef|@sxnhprogram#1\end{nhprogram*}[#1|end[nhprogram*]]
+|gdef|@xnhnprogram#1\end{nhnprogram}[#1|end[nhnprogram]]
+|gdef|@sxnhnprogram#1\end{nhnprogram*}[#1|end[nhnprogram*]]
+|gdef|@xnhcprogram#1\end{nhcprogram}[#1|end[nhcprogram]]
+|gdef|@sxnhcprogram#1\end{nhcprogram*}[#1|end[nhcprogram*]]
+%% non-footer environment
+|gdef|@xnfprogram#1\end{nfprogram}[#1|end[nfprogram]]
+|gdef|@sxnfprogram#1\end{nfprogram*}[#1|end[nfprogram*]]
+|gdef|@xnfnprogram#1\end{nfnprogram}[#1|end[nfnprogram]]
+|gdef|@sxnfnprogram#1\end{nfnprogram*}[#1|end[nfnprogram*]]
+|gdef|@xnfcprogram#1\end{nfcprogram}[#1|end[nfcprogram]]
+|gdef|@sxnfcprogram#1\end{nfcprogram*}[#1|end[nfcprogram*]]
+|endgroup
+%
+\begingroup
+\catcode`\^^M=\active\catcode`\ =\active%
+\gdef\@programdefs{\def^^M{\if@tempswa\ \par\fi\@tempswatrue}\let =\ }%
+\endgroup
+%
+\def\@program#1#2{%
+  \par
+  \refstepcounter{program}%
+  \addcontentsline{lop}{program}{\protect\numberline{\theprogramref}#1}%
+  \label{#2}%
+  \vskip\preprogramskip
+  \@makeprogramheader{#1}
+  \nopagebreak\vskip\parskip
+  \bgroup
+  \@makeprogramlayout
+  \@tempswafalse
+  \everypar{%
+    \addtocounter{prglineno}{1}%
+    \setcounter{prglastlineno}{\c@prglineno}%
+    \hbox to \linenowidth{\hss\rmfamily\theprglineno{
+    \raisebox{1.0pt}{:}}}\kern.5\Cwd%
+  }%
+  \obeylines\def\do##1{\catcode`##1=12}\dospecials
+}%
+%
+% program environment
+\def\program#1#2{%
+  \setcounter{prglineno}{0}%
+  \@program{#1}{#2}\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xprogram%
+}%
+\expandafter\def\csname program*\endcsname#1#2{%
+  \setcounter{prglineno}{0}%
+  \@program{#1}{#2}\verbh@@k\@programdefs\@sxprogram%
+}%
+\def\endprogram{%
+  \par
+  \@makeprogramfoot
+  \egroup
+  \vskip\postprogramskip
+}%
+\expandafter\let\csname endprogram*\endcsname\endprogram%
+%
+% nprogram environment
+\def\nprogram#1#2#3{%
+  \setcounter{prglineno}{#1}%
+  \addtocounter{prglineno}{-1}%
+  \@program{#2}{#3}\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnprogram%
+}%
+\expandafter\def\csname nprogram*\endcsname#1#2#3{%
+  \setcounter{prglineno}{#1}%
+  \addtocounter{prglineno}{-1}%
+  \@program{#2}{#3}\verbh@@k\@programdefs\@sxnprogram%
+}%
+\def\endnprogram{\endprogram}%
+\expandafter\let\csname endnprogram*\endcsname\endnprogram%
+%
+% cprogram environment
+\def\cprogram#1#2{%
+  \setcounter{prglineno}{\c@prglastlineno}%
+  \@program{#1}{#2}\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xcprogram%
+}%
+\expandafter\def\csname cprogram*\endcsname#1#2{%
+  \setcounter{prglineno}{\c@prglastlineno}%
+  \@program{#1}{#2}\verbh@@k\@programdefs\@sxcprogram%
+}%
+\def\endcprogram{\endprogram}%
+\expandafter\let\csname endcprogram*\endcsname\endcprogram%
+%
+%
+%Common macro for Non-Header environments
+\def\@nhprogram{%
+  \par
+  \nopagebreak\vskip\parskip
+  \bgroup
+  \@makeprogramlayout
+  \@tempswafalse
+  \everypar{%
+    \addtocounter{prglineno}{1}%
+    \setcounter{prglastlineno}{\c@prglineno}%
+    \hbox to \linenowidth{\hss\rmfamily\theprglineno{:}}\kern.5\Cwd%
+  }%
+  \obeylines\def\do##1{\catcode`##1=12}\dospecials
+}%
+%
+%
+% nhprogram environment
+\def\nhprogram{%
+  \setcounter{prglineno}{0}%
+  \@nhprogram\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnhprogram%
+}%
+\expandafter\def\csname nhprogram*\endcsname{%
+  \setcounter{prglineno}{0}%
+  \@nhprogram\verbh@@k\@programdefs\@sxnhprogram%
+}%
+\def\endnhprogram{%
+  \par
+  \@makeprogramfoot
+  \egroup
+  \vskip\postprogramskip
+}%
+\expandafter\let\csname endnhprogram*\endcsname\endnhprogram%
+%
+% nhnprogram environment
+\def\nhnprogram#1{%
+  \setcounter{prglineno}{#1}%
+  \addtocounter{prglineno}{-1}%
+  \@nhprogram\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnhnprogram%
+}%
+\expandafter\def\csname nhnprogram*\endcsname#1{%
+  \setcounter{prglineno}{#1}%
+  \addtocounter{prglineno}{-1}%
+  \@nhprogram\verbh@@k\@programdefs\@sxnhnprogram%
+}%
+\def\endnhnprogram{\endprogram}%
+\expandafter\let\csname endnhnprogram*\endcsname\endnhnprogram%
+%
+% nhcprogram environment
+\def\nhcprogram{%
+  \setcounter{prglineno}{\c@prglastlineno}%
+  \@nhprogram\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnhcprogram%
+}%
+\expandafter\def\csname nhcprogram*\endcsname{%
+  \setcounter{prglineno}{\c@prglastlineno}%
+  \@nhprogram\verbh@@k\@programdefs\@sxnhcprogram%
+}%
+\def\endnhcprogram{\endprogram}%
+\expandafter\let\csname endnhcprogram*\endcsname\endnhcprogram%
+%
+%
+% Common macro for Non-Footer environment
+\def\@makenfprogramfoot{%
+    \leaders\hbox to\linewidth{%
+      \vrule width 0pt height .8\baselineskip
+      \hfill .\hfill}\vskip3\baselineskip
+}
+%
+% nfprogram environment
+\def\nfprogram#1#2{%
+  \setcounter{prglineno}{0}%
+  \@program{#1}{#2}\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnfprogram%
+}%
+\expandafter\def\csname nfprogram*\endcsname#1#2{%
+  \setcounter{prglineno}{0}%
+  \@program{#1}{#2}\verbh@@k\@programdefs\@sxnfprogram%
+}%
+\def\endnfprogram{%
+  \par
+  \@makenfprogramfoot
+  \egroup
+}%
+\expandafter\let\csname endnfprogram*\endcsname\endnfprogram%
+%
+% nfnprogram environment
+\def\nfnprogram#1#2#3{%
+  \setcounter{prglineno}{#1}%
+  \addtocounter{prglineno}{-1}%
+  \@program{#2}{#3}\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnfnprogram%
+}%
+\expandafter\def\csname nfnprogram*\endcsname#1#2#3{%
+  \setcounter{prglineno}{#1}%
+  \addtocounter{prglineno}{-1}%
+  \@program{#2}{#3}\verbh@@k\@programdefs\@sxnfnprogram%
+}%
+\def\endnfnprogram{\endnfprogram}%
+\expandafter\let\csname endnfnprogram*\endcsname\endnfnprogram%
+%
+% nfcprogram environment
+\def\nfcprogram#1#2{%
+  \setcounter{prglineno}{\c@prglastlineno}%
+  \@program{#1}{#2}\frenchspacing\@vobeyspaces%
+  \verbh@@k\@programdefs\@xnfcprogram%
+}%
+\expandafter\def\csname nfcprogram*\endcsname#1#2{%
+  \setcounter{prglineno}{\c@prglastlineno}%
+  \@program{#1}{#2}\verbh@@k\@programdefs\@sxnfcprogram%
+}%
+\def\endnfcprogram{\endnfprogram}%
+\expandafter\let\csname endnfcprogram*\endcsname\endnfcprogram%
+\endinput

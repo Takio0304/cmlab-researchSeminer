@@ -1,0 +1,355 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                計算力学研究室スタイルファイル               %%
+%%                  cmlab_5.00.sty  (Ver 5.00)                 %%
+%%                  Last Update: Jan 14, 2025                  %%
+%%               Developed by KURAHASHI Tetsuhiro              %%
+%%				 Edited by MIYAUCHI Haruki					   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------
+%  【使用上のご注意】
+%
+%	●このファイルは一切上書きせずに，kurahashiショートカット先に
+%     置いて下さい．
+%   ●本スタイルファイル名に含まれる数字はバージョンNo.です．
+%     ご使用の際には，\usepackage{cmlab_X.XX}を
+%     \usepackage{cmlab_3.00}に書き換えて下さい．
+%   ●本スタイルファイルはフリーです．
+%   ●ご使用された結果生じたいかなる損害に対しても，倉橋哲弘は
+%     いかなる責任も負いかねます．予めご了承ください．
+%----------------------------------------------------------------
+%  【改版履歴】
+%
+%   ●Ver 5.00 (2025.01.14)
+%		発表会標準フォーマット・土木学会関東支部フォーマット・
+%		研究室年報フォーマットに完全対応
+%		図のキャプション変更
+%
+%----------------------------------------------------------------
+%   ページスタイル名 --> 全て jsarticle
+%----------------------------------------------------------------
+%   初期化宣言
+%----------------------------------------------------------------
+\NeedsTeXFormat{pLaTeX2e}[2001/09/04]
+\ProvidesPackage{cmlab_5.00}[]
+\RequirePackage{calc}
+\RequirePackage{ifthen}
+%----------------------------------------------------------------
+%   各ボックスの内容（ボックスレジスタ）
+%----------------------------------------------------------------
+%
+%   ボックス名       | 内容
+%   -----------------+-----------------------------------------
+    \newbox\@word  % | (jsce のみ) キーワードとなる語句
+    \newbox\@addr  % | (jsce のみ) 連絡先
+    \newbox\@keyw  % | (jsce のみ) "KeyWords" の文字
+    \newbox\@foot  % | (jsce のみ) フッタ全体を囲むボックス
+%
+%----------------------------------------------------------------
+%   欧文フォントの変更  -> txfonts パッケージ
+%----------------------------------------------------------------
+%
+%   ○ ローマン体のデフォルトを Times New Roman に変更（数式含む）
+%
+%\RequirePackage{txfonts}
+%
+%   ○ サンセリフ体のデフォルトを Helvetica に変更
+%
+\renewcommand{\sfdefault}{phv}
+%
+%   ○ 用意されていないサイズのcmフォントを既存のサイズで代用する
+%
+\RequirePackage{type1cm}
+%----------------------------------------------------------------
+%   \textbf の再定義
+%----------------------------------------------------------------
+\def\textbf#1{\textgt{\sf#1}}
+%
+%----------------------------------------------------------------
+%   版面パラメータ (A4) の初期化 --> 全スタイル共通部
+%----------------------------------------------------------------
+\hoffset=-1truein
+\voffset=-1truein
+\headheight=0truemm
+\headsep=0truemm
+\marginparsep=0truemm
+\marginparwidth=0truemm
+\oddsidemargin=15truemm
+\evensidemargin=15truemm
+\textwidth=180truemm
+\topmargin=18truemm
+\topskip=0truemm
+\columnsep=7truemm
+\footskip=0truemm
+\newlength{\@mylength}
+\newlength{\@keywordslength}
+\renewcommand{\baselinestretch}{0.92}
+%----------------------------------------------------------------
+%   キーワード，連絡先 -> jsce
+%----------------------------------------------------------------
+\newcommand{\keywords}[2][\bf KeyWords：]{%
+    \setbox\@keyw\hbox{#1\quad}%
+    \setlength{\@keywordslength}{\textwidth-\wd\@keyw}%
+    \setbox\@word\hbox{\parbox[t]{\@keywordslength}{\small#2}}
+}
+\def\address#1{%
+	\setbox\@addr=\hbox{\textgt{連絡先：\quad}%
+	\parbox[t]{\textwidth}{\small#1}}}
+%----------------------------------------------------------------
+%   節，項のデザイン変更 -> cmlab
+%----------------------------------------------------------------
+\renewcommand{\section}{%
+    \@startsection{section}{1}{\z@}%
+    {0.25\Cvs \@plus.2\Cdp \@minus.2\Cdp}%
+    {.05\Cvs \@plus.025\Cdp}%
+    {\reset@font\large\gt\sf}}
+\renewcommand{\thesection}{\sf\@arabic\c@section.\reset@font}
+\renewcommand{\subsection}{%
+    \@startsection{subsection}{1}{\z@}%
+    {.05\Cvs \@plus.1\Cdp \@minus.1\Cdp}%
+    {.025\Cvs \@plus.025\Cdp}%
+    {\reset@font\gt\sf}}
+\renewcommand{\thesubsection}{%
+	\sf\@arabic\c@section.\@arabic\c@subsection%
+	\reset@font}
+\renewcommand{\subsubsection}{%
+    \@startsection{subsubsection}{1}{\z@}%
+    {.0\Cvs \@plus.1\Cdp \@minus.1\Cdp}%
+    {0\Cvs}%
+    {\reset@font\gt\sf}}
+\renewcommand{\thesubsubsection}{%
+	\sf\@arabic\c@section.\@arabic\c@subsection.%
+	\@arabic\c@subsubsection%
+	\reset@font}
+%----------------------------------------------------------------
+%   論文タイトルの出力 -> cmlab, jsce, nenpo
+%----------------------------------------------------------------
+\pagebreak\setcounter{section}{0}
+%\newcommand{\papertitle}[1]{%
+%        \noindent\begin{center}\gt\sf\Large#1\end{center}}
+\newcommand{\papertitle}[1]{%
+    \par\noindent\begin{center}\gt\sf\fontsize{15pt}{20pt}%
+    \selectfont#1\end{center}}
+\newcommand{\jscetitle}[1]{\vspace{-1zh}%
+    \par\noindent\mbox{}\hfill
+    \parbox{.75\linewidth}{%
+    	\begin{center}\gt\sf\Large#1\end{center}}
+    \hfill\mbox{}\vspace*{-1zh}}
+\newcommand{\englishtitle}[1]{\vspace{-1.5zh}%
+	\noindent\begin{center}\rm\sl\fontsize{11pt}{13pt}\selectfont
+	#1\end{center}}
+\newcommand{\writer}[2]{%
+	\renewcommand{\arraystretch}{0.8}
+	\begin{flushright}\begin{tabular}{#1}#2%
+		\end{tabular}\end{flushright}%
+    \vspace{0.5zh}}
+\newcommand{\presendate}[4]{\textbf{%
+	\fontsize{10pt}{10pt}\selectfont
+	第#1回 計算力学研究室発表会（#2年#3月#4日）}}
+\newcommand{\nenpodate}[2]{\textbf{%
+	\fontsize{10pt}{10pt}\selectfont
+	研究年報\kern0.5zw第\kern0.1zw#1\kern0.1zw号（#2年度）}}
+%----------------------------------------------------------------
+%   ページスタイル(empty)の再定義
+%----------------------------------------------------------------
+\def\ps@empty{%
+    \def\@oddfoot{}
+    \def\@evenfoot{}
+    \setlength{\@mylength}{297truemm-2\topmargin}
+    \textheight=\@mylength
+}
+%----------------------------------------------------------------
+%   図表のキャプション変更
+%----------------------------------------------------------------
+%
+%   ○ キャプションのデザインを変更する
+%
+\def\figurename#1#2{\small\textbf{ 図{-}{\textbf#2}}\rm}
+\def\tablename#1#2{\small\textbf{ 表{-}{\textbf#2}}\rm}
+%
+%   ○ 複数行に渡るキャプションをハングさせる
+%
+\long\def\@makecaption#1#2{
+    \vskip 0.5zh plus 0.25zh minus 0.25zh
+    \setbox\@tempboxa\hbox{\small#1\quad#2}
+    \ifdim \wd\@tempboxa >\hsize\@hangfrom{\small#1\quad}\small#2
+    \else\hbox to\hsize{\hfil\box\@tempboxa\hfil} 
+    \vskip 0.5zh plus 0.25zh minus 0.25zh
+    \fi}
+%----------------------------------------------------------------
+%   図と表の参照
+%----------------------------------------------------------------
+\newcommand{\図}[1]{\textbf{図-\ref{#1}}}
+\newcommand{\表}[1]{\textbf{表-\ref{#1}}}
+\long\def\@makefntext#1{\parindent 1trueem\noindent
+    \@hangfrom{\hbox to 1.8trueem{\hss$^{\@thefnmark}$}}#1}
+%----------------------------------------------------------------
+%   リスト環境パラメータの変更
+%----------------------------------------------------------------
+\renewenvironment{enumerate}%% enumerate 環境を再定義
+  {\ifnum \@enumdepth >\thr@@\@toodeep\else% 
+   \advance\@enumdepth\@ne
+   \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+   \list{\csname label\@enumctr\endcsname}{%
+      \iftdir
+         \ifnum \@listdepth=\@ne \topsep.5\normalbaselineskip
+           \else\topsep\z@\fi
+         \labelwidth1zw \labelsep.3zw
+         \ifnum \@enumdepth=\@ne \leftmargin1zw\relax
+           \else\leftmargin\leftskip\fi
+         \advance\leftmargin 1zw
+      \fi
+         \parskip\z@ \itemsep\z@ \parsep\z@ \topsep\z@% 
+         \usecounter{\@enumctr}%
+         \def\makelabel##1{\hss\llap{##1}}}%
+   \fi}{\endlist}
+\renewenvironment{itemize}%% itemize 環境を再定義
+  {\ifnum \@enumdepth >\thr@@\@toodeep\else% 
+   \advance\@enumdepth\@ne
+   \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+   \list{$\bullet$}{%
+      \iftdir
+         \ifnum \@listdepth=\@ne \topsep.5\normalbaselineskip
+           \else\topsep\z@\fi
+         \labelwidth1zw \labelsep.3zw
+         \ifnum \@enumdepth=\@ne \leftmargin1zw\relax
+           \else\leftmargin\leftskip\fi
+         \advance\leftmargin 1zw
+      \fi
+         \parskip\z@ \itemsep\z@ \parsep\z@ \topsep\z@% 
+         \def\makelabel##1{\hss\llap{##1}}}%
+   \fi}{\endlist}
+
+%----------------------------------------------------------------
+%   参考文献デザインパラメータの変更
+%----------------------------------------------------------------
+\def\@biblabel#1{#1)}
+\def\@cite#1{\rm\normalsize \raise 0.65zh\hbox{\scriptsize#1)}\,}
+\renewenvironment{thebibliography}[1]
+{\par\small\section*{%
+\normalsize\refname\@mkboth{\refname}{\refname}\vskip-0.1zh}
+   \list{\topsep=-.4zh plus 0.2zh minus 0.1zh%
+        \parsep=.1zh \itemsep=.1zh
+        \@biblabel{\small\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\small\@biblabel{#1}}%
+         \advance\leftmargin\labelsep
+         \newlength{\dammy@}
+         \setlength{\dammy@}{\labelwidth+\itemindent+\labelsep}
+         \leftmargin=\dammy@
+         \listparindent=0zw
+         \@openbib@code
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\small\@arabic\c@enumiv}%
+         }%
+   \sloppy
+   \clubpenalty4000
+   \@clubpenalty\clubpenalty
+   \widowpenalty4000%
+   \sfcode`\.\@m}
+  {\def\@noitemerr
+    {\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+%
+%-----------------------------------------------------------------
+%     マクロの定義－丸数字
+%-----------------------------------------------------------------
+\newcommand{\maru}[2][]{{%
+	\mdseries\ifthenelse{\equal{#1}{}}{\rm}{\rm}%
+	\ifnum #2<10
+		\ooalign{%
+		\hfil#2\/\hfil\crcr\raise.167ex\hbox{\mathhexbox20D}}
+	\else
+		\ooalign{\hfil{\footnotesize\scalebox{0.8}[1.0]{%
+		\raisebox{0.08zh}[0pt][0pt]{#2}}}\/\hfil%
+		\crcr\raise.167ex\hbox{\mathhexbox20D}}
+	\fi}\!\!}
+\newcommand{\shikaku}[2][]{{%
+	\mdseries\ifthenelse{\equal{#1}{}}{\rm}{\rm}%
+	\ifnum #2<10
+		\ooalign{\hfil#2\/\hfil\crcr\raisebox{%
+		-0.167ex}[0pt][0pt]{\hbox{\Large □}}}
+	\else
+		\ooalign{\hfil{\footnotesize\scalebox{0.8}[1.0]{%
+		\raisebox{0.08zh}[0pt][0pt]{#2}}}\/\hfil%
+		\crcr\raisebox{-0.167ex}[0pt][0pt]{\hbox{\Large □}}}
+	\fi}}
+\newcommand{\hishi}[2][]{{%
+	\mdseries\ifthenelse{\equal{#1}{}}{\rm}{\rm}%
+	\ifnum #2<10
+		\ooalign{\hfil#2\/\hfil\crcr\raisebox{%
+		-0.167ex}[0pt][0pt]{\hbox{\Large\rotatebox[%
+		origin=c]{45}{□}}}}
+	\else
+		\ooalign{\hfil{\footnotesize\scalebox{0.8}[1.0]{%
+		\raisebox{0.08zh}[0pt][0pt]{#2}}}\/\hfil%
+		\crcr\raisebox{-0.167ex}[0pt][0pt]{\Large\rotatebox[%
+		origin=c]{45}{□}}}
+	\fi}}
+%
+%----------------------------------------------------------------
+%   ページスタイル(jsce)の定義
+%----------------------------------------------------------------
+\def\ps@jsce{%
+    \def\@oddfoot{%
+		\ifnum\thepage=1
+        	\global\setbox\@foot=\vbox{%
+        		{\vskip1zh\mbox{\rule{\textwidth}{0.3truept}}%
+        		\vskip0.5zh\hsize=\linewidth%
+        		\hbox{%
+        			\copy\@keyw\hfil\vtop{%
+        			\hsize=\@keywordslength\copy\@word\hfil}%
+        		}%
+        		\vskip0.4zh\copy\@addr\hfil}}
+        	\\\copy\@foot\hfil\leftmark%
+		\fi
+        \global\setlength{\@mylength}{297truemm-2\topmargin}
+		\global\textheight=\@mylength
+	}
+    \def\@oddhead{}
+    \def\@evenhead{}
+	\setlength{\@mylength}{297truemm-2\topmargin-3.6zh}
+	\textheight=\@mylength
+	\renewcommand{\section}{%
+	    \@startsection{section}{1}{\z@}%
+	    {0.25\Cvs \@plus.1\Cdp \@minus.1\Cdp}%
+	    {.05\Cvs \@plus.025\Cdp}%
+	    {\reset@font\large\gt\sf}}
+	\renewcommand{\thesubsection}{%
+		\sf(\@arabic\c@subsection)\reset@font}
+	\renewcommand{\thesubsubsection}{%
+		\sf\,\,\@alph\c@subsubsection)\reset@font}
+}
+%----------------------------------------------------------------
+%   ページスタイル(cmlab)の定義
+%----------------------------------------------------------------
+\def\ps@cmlab{%
+	\def\@oddfoot{\mbox{}\hfil---\,\thepage\,---\hfil\mbox{}}
+    \def\@evenfoot{\mbox{}\hfil---\,\thepage\,---\hfil\mbox{}}
+    \def\@oddhead{}
+    \def\@evenhead{}
+    \footskip=9truemm
+    \setlength{\@mylength}{297truemm-2\topmargin}
+    \textheight=\@mylength
+	\textwidth=180truemm
+	\oddsidemargin=15truemm
+	\evensidemargin=15truemm
+}
+%----------------------------------------------------------------
+%   ページスタイル(nenpo)の定義 -> ページナンバリングは手動
+%----------------------------------------------------------------
+\def\ps@nenpo{%
+	\def\@oddfoot{\mbox{}\hfil\thepage\hfil\mbox{}}
+    \def\@evenfoot{\mbox{}\hfil\thepage\hfil\mbox{}}
+    \def\@oddhead{}
+    \def\@evenhead{}
+    \setlength{\@mylength}{297truemm-2\topmargin}
+    \textheight=\@mylength
+	\oddsidemargin=20truemm
+	\evensidemargin=20truemm
+	\textwidth=170truemm
+    \textheight=252.5truemm
+	\topmargin=22.5truemm
+	\footskip=7.5truemm
+}
+%%% end of file "cmlab.sty"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\endinput

@@ -1,0 +1,36 @@
+% Copyright(C) by Y.OTOBE
+\newlength{\boldarrayrulewidth}
+\setlength{\boldarrayrulewidth}{2\arrayrulewidth}
+\def\bvline{\vrule width \boldarrayrulewidth}
+\def\bhline{%
+  \noalign{\ifnum0=`}\fi\hrule \@height \boldarrayrulewidth \futurelet
+   \reserved@a\@xbhline}
+\def\@xbhline{\ifx\reserved@a\bhline
+               \vskip\doublerulesep
+               \vskip-\boldarrayrulewidth
+             \fi
+      \ifnum0=`{\fi}}
+\newcount\@cla
+\newcount\@clb
+\def\bcline#1{\@bcline[#1]}
+\def\@bcline[#1-#2]{%
+  \noalign{\global\@cla#1\relax\global\advance\@cla\m@ne
+    \ifnum\@cla>\z@
+      \global\let\@gtempa\@bclinea
+    \else
+      \global\let\@gtempa\@bclineb
+    \fi
+    \global\@clb#2\relax
+    \global\advance\@clb-\@cla
+  }%
+  \@gtempa
+  \noalign{\vskip-\boldarrayrulewidth}%
+}
+\def\@bclinea{%
+  \multispan\@cla&\multispan\@clb
+  \unskip\leaders\hrule \@height \boldarrayrulewidth \hfill\cr
+}
+\def\@bclineb{%
+  \multispan\@clb
+  \unskip\leaders\hrule \@height \boldarrayrulewidth \hfill\cr
+}

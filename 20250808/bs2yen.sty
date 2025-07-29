@@ -1,0 +1,46 @@
+% Redifine the verbatim environment and \verb command
+\ProvidesPackage{bs2yen}
+%
+% フォントを変更したければここを変更せよ。
+\def\verbatim@font{\normalfont\ttfamily\gtfamily}
+\def\verbatim@size{\small}
+% verbatim環境の出力調整
+\newdimen\verbatimbaselineskip \verbatimbaselineskip=\baselineskip
+\newdimen\verbatimleftmargin \verbatimleftmargin=\leftmargini
+%
+% 以下は、詳しくなければさわるな
+%
+% Remark for power users:
+% We have to redifine \@xverbatim and \@sxverbatim.
+% Original definition makes catcode of \ 12.
+% However, it is the most important point that \verbh@@k makes
+% the catcode of \ 13 (active).
+% Therefore, we have to change pattern matching with \ \active.
+% First version had this bug, sorry.
+\begingroup
+  \catcode `/=0         \catcode `[=1   \catcode`]=2
+  \catcode `\{=12       \catcode `\}=12 \catcode`\\=13
+  /gdef/@xverbatim#1\end{verbatim}[#1/end[verbatim]]
+  /gdef/@sxverbatim#1\end{verbatim*}[#1/end[verbatim*]]
+/endgroup
+\begingroup
+  \catcode`\/=0   \catcode`\\=13
+  /gdef/verbh@@k{/catcode`/\=13 /let\=/yen}
+/endgroup
+\def\verbatim{\@verbatim \frenchspacing\@vobeyspaces \verbh@@k \@xverbatim}
+\@namedef{verbatim*}{\@verbatim \verbh@@k \@sxverbatim}
+\def\verb{\relax\ifmmode\hbox\else\leavevmode\fi%\null\fi
+  \bgroup \verbatim@font\@noligs
+    \verb@eol@error \let\do\@makeother \dospecials \verbh@@k
+    \@ifstar\@sverb\@verb}
+%
+%
+% \yen 命令の定義。
+\def\yen{%
+  {\setbox0=\hbox{Y}Y%
+    \kern-.97\wd0\vbox{%
+      \hrule height.1ex width.98\wd0
+      \kern.33ex\hrule height.1ex width.98\wd0\kern.45ex
+    }%
+  }%
+}

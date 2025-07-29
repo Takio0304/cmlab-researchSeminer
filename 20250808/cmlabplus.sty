@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%            計算力学研究室スタイルファイルおまけ版           %%
+%%                   cmlabplus.sty (Ver 2.00)                  %%
+%%                  Last Update:  June 5, 2004                 %%
+%%               Developed by KURAHASHI Tetsuhiro              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------------------------------------------------------
+%   初期化宣言
+%----------------------------------------------------------------
+\NeedsTeXFormat{pLaTeX2e}[2001/09/04]
+\ProvidesPackage{cmlabplus}[]
+%
+%----------------------------------------------------------------
+%   使用パッケージ
+%----------------------------------------------------------------
+\usepackage{array}
+\usepackage{amsmath,amssymb}
+\usepackage{ascmac}
+%\usepackage{colortbl}
+\usepackage{dcolumn}
+\usepackage{exttab}
+\usepackage{fancybox}
+\usepackage{secprogram}
+\usepackage{tabularx}
+\usepackage{type1cm}
+%
+%----------------------------------------------------------------
+%	マクロの定義－新たな色の定義
+%----------------------------------------------------------------
+\definecolor{nearlywhite}{gray}{0.92}
+\definecolor{whitegray}{gray}{0.75}
+\definecolor{medgray}{gray}{0.55}
+\definecolor{darkgray}{gray}{0.4}
+%
+%----------------------------------------------------------------
+%	マクロの定義－分数
+%----------------------------------------------------------------
+\renewcommand{\frac}[2]{\genfrac{}{}{}{}{\>\! #1 \>\!}{\>\! #2 \>\!}}
+\renewcommand{\dfrac}[2]{\genfrac{}{}{}{0}{\>\! #1 \>\!}{\>\! #2 \>\!}}
+\renewcommand{\cfrac}[2]{\genfrac{}{}{}{1}{#1}{#2}}
+%
+%----------------------------------------------------------------
+%	マクロの定義－表の指定子
+%----------------------------------------------------------------
+%\newcommand{\tabtopsp}[1]{\vbox{\vbox to#1{}\vbox to 1zw{}}}
+%\newcolumntype{G}{>{\columncolor[cmyk]{%
+%	0.00,0.00,0.00,0.25}}>\bfseries c}
+%\newcolumntype{g}{>{\columncolor[cmyk]{0.00,0.00,0.00,0.25}}>%
+%	\mybfseries m{.4\linewidth}}
+%\newcolumntype{x}{>{\columncolor[cmyk]{0.00,0.00,0.00,0.25}}>%
+%	\mybfseries X}
+%\def\VVVVV{\vrule width 0.8pt}
+%\newcolumntype{I}{!{\VVVVV}!{\hspace{-0.25zh}}}%%% 表の横幅が \linewidth の場合
+%
+%-----------------------------------------------------------------
+%     マクロの定義－丸数字
+%-----------------------------------------------------------------
+\newcommand{\maru}[2][]{{%
+	\mdseries\ifthenelse{\equal{#1}{}}{\rm}{\rm}%
+	\ifnum #2<10
+		\ooalign{%
+		\hfil#2\/\hfil\crcr\raise.167ex\hbox{\mathhexbox20D}}
+	\else
+		\ooalign{\hfil{\footnotesize\scalebox{0.8}[1.0]{%
+		\raisebox{0.08zh}[0pt][0pt]{#2}}}\/\hfil%
+		\crcr\raise.167ex\hbox{\mathhexbox20D}}
+	\fi}\!\!}
+\newcommand{\shikaku}[2][]{{%
+	\mdseries\ifthenelse{\equal{#1}{}}{\rm}{\rm}%
+	\ifnum #2<10
+		\ooalign{\hfil#2\/\hfil\crcr\raisebox{%
+		-0.167ex}[0pt][0pt]{\hbox{\Large □}}}
+	\else
+		\ooalign{\hfil{\footnotesize\scalebox{0.8}[1.0]{%
+		\raisebox{0.08zh}[0pt][0pt]{#2}}}\/\hfil%
+		\crcr\raisebox{-0.167ex}[0pt][0pt]{\hbox{\Large □}}}
+	\fi}}
+\newcommand{\hishi}[2][]{{%
+	\mdseries\ifthenelse{\equal{#1}{}}{\rm}{\rm}%
+	\ifnum #2<10
+		\ooalign{\hfil#2\/\hfil\crcr\raisebox{%
+		-0.167ex}[0pt][0pt]{\hbox{\Large\rotatebox[%
+		origin=c]{45}{□}}}}
+	\else
+		\ooalign{\hfil{\footnotesize\scalebox{0.8}[1.0]{%
+		\raisebox{0.08zh}[0pt][0pt]{#2}}}\/\hfil%
+		\crcr\raisebox{-0.167ex}[0pt][0pt]{\Large\rotatebox[%
+		origin=c]{45}{□}}}
+	\fi}}
+%
+%----------------------------------------------------------------
+%	マクロの定義－均等幅
+%----------------------------------------------------------------
+\newcommand{\kintou}[2]{%
+	\leavevmode
+	\hbox to #1{%
+		\kanjiskip=0pt plus 1fill minus 1fill
+		\xkanjiskip=\kanjiskip
+		#2}}
+%----------------------------------------------------------------
+%	マクロの定義－その他
+%----------------------------------------------------------------
+\newcommand{\unit}[1]{\left[ \mathrm{#1}\right]}
+%----------------------------------------------------------------
+%	マクロの定義－新しいリスト
+%----------------------------------------------------------------
+\newcounter{klist}
+\setcounter{klist}{0}
+\newenvironment{mylist}{%
+	\begin{list}{}{%
+	\listparindent=1zw \parsep=0zw \itemindent=-3zw
+	\labelwidth=0zw \labelsep=0zw \leftmargin=3zw \itemsep=1zh
+	\usecounter{klist}}%
+	\renewcommand{\makelabel}{%
+	\refstepcounter{klist}\sf(\theklist) \sf}%
+	}{%
+	\end{list}\setcounter{klist}{0}}
+
+%%% end of file "cmlabplus.sty"%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
