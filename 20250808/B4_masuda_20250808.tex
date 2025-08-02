@@ -15,6 +15,8 @@
 
 % 必要に応じて追加のパッケージを読み込みます
 % \usepackage{amsmath} % 高度な数式用
+\usepackage{tikz} % フローチャート作成用
+\usetikzlibrary{shapes,arrows,positioning,calc}
 
 %====================================================================================
 % Document Start
@@ -26,113 +28,269 @@
 % \twocolumn[...] の中は1段組で表示されます
 \twocolumn[%
 	\presendate{1}{2025}{8}{8}  %% 発表日 (第1回/2025年/8月/8日)
-    \papertitle{幾何音響理論に基づく高速鉄道騒音の\\リアルタイム可聴化システムの構築}
+    \papertitle{幾何音響理論に基づく高速鉄道騒音のリアルタイム可聴化システムの構築}
     \writer{r}{中央大学理工学部都市環境学科　学部４年\quad 増田　樹 \\ Tatsuki Masuda}
 ]
 
 %**********************************************************
 \section{はじめに}
-リニア中央新幹線に代表される電磁気浮上式高速鉄道は，国家的プロジェクトとして本州を横断する形で建設が進められている．しかし，このような大規模プロジェクトは沿線住民の理解と合意形成なくしては成り立たない．特に，住民が抱える大きな不安の一つに「騒音問題」が挙げられる．
+リニア中央新幹線に代表される浮上式高速鉄道は，国家的プロジェクトとして本州を横断する形で建設が進められている．しかし，このような大規模プロジェクトは沿線住民の理解と合意形成なくしては成り立たない．特に，住民が抱える大きな不安の一つに「騒音問題」が挙げられる．
 
 そこで本研究室では，騒音問題を工学的に評価し，効果的な対策の立案や住民への説明に資することを目的として，騒音シミュレーション技術の開発に取り組んできた．既往研究では，据え置き型の大型VRシステム(CAVE)を用いることで，没入感の高い騒音評価環境を構築してきた．しかし，このシステムは体験場所が限定されるという課題があった．
 
-そこで本研究では，HMD(ヘッドマウントディスプレイ)であるMeta Quest 3を用いて騒音評価システムを再開発することにより，場所を選ばずに誰でも手軽に騒音を体験できる環境を構築することを目的とする．これにより，騒音問題に対する合意形成プロセスへの貢献が期待される．
+そこで近年，HMD(ヘッドマウントディスプレイ)であるMeta Quest 3を用いた携帯型騒音評価システムの基盤構築が進められてきた．しかし，Meta Quest 3での高音圧騒音シミュレーションにおいて深刻な音割れ問題が発生し，実用化の大きな障壁となっていた．
+
+本研究では，この音割れ問題の根本的解決に取り組み，実用的なシステムの構築を目的とする．これにより，騒音問題に対する合意形成プロセスへの貢献が期待される．
 
 %**********************************************************
-\section{電磁気浮上式高速鉄道騒音評価システム}
-\subsection{VR 環境}
-本研究では,VR 装置として,図-1 に示す没入型 VR 装置 Holostage を用いる.この装置は,3 面(正面,側面, 底面)の大型スクリーンとそれぞれに対応した高性能プロジェクター,VR 空間内の利用者の動きを捉えるための, ワイヤレストラッキング装置及びそれらを制御する並列計算機から構成される. また,天井及び床には 12.1 チャンネルの音響機器を備えており,立体音響場を構築することが可能である.
-本システムのフローチャートを図-2 に示す.入力データとしては,車両の走行条件,音源の音響パワーレベル, 構造物や軌道の幾何形状を設定する.また,時間ループ内において,車両の音源位置,VR 空間内の利用者(受音点)の位置情報をトラッキング装置より取得する.そして,それらの情報を用いて幾何音響理論に基づくモデル(ASJ RTN Model2018)2) により,利用者の位置情報における騒音レベルを計算する.
+\section{浮上式高速鉄道騒音評価システム}
+\subsection{システム概要}
+本システムは，HMD（ヘッドマウントディスプレイ）としてMeta Quest 3を用いた浮上式高速鉄道騒音評価システムである．従来の据え置き型大型VRシステム（CAVE）とは異なり，Meta Quest 3を使用することで場所を選ばずに手軽に騒音体験が可能な環境を提供する．本研究では，このシステムにおける音割れ問題を解決し，実用的な高品質音響出力を実現した．
 
-% % 図1のプレースホルダー
-% \begin{figure}[h]
-%     \centering
-%     % \includegraphics[width=0.8\linewidth]{pic/holostage.png}
-%     \caption{没入型 VR 装置 Holostage}
-%     \label{fig:holostage}
-% \end{figure}
+\subsection{開発環境}
+本研究では，統合開発環境としてUnityを使用し，開発キットとしてXR Interaction Toolkitを使用した．デバイスには，HMDとしてMeta社製のMeta Quest 3を使用した．Unityのバージョンは，開発過程において音響処理の改善のため段階的に移行を実施した．
 
-% % 図2のプレースホルダー
-% \begin{figure}[h]
-%     \centering
-%     % \includegraphics[width=0.9\linewidth]{pic/system_flow.png}
-%     \caption{本システムの構成}
-%     \label{fig:system_flow}
-% \end{figure}
+\subsection{システム構成}
+本システムのフローチャートを図\ref{fig:system_flow}に示す．入力データとして車両走行条件，音源の音響パワーレベル，構造物や軌道の形状が設定され，時間ループ内で音源位置と観測者位置がMeta Quest 3の内蔵トラッキング機能から取得され，幾何音響理論に基づき騒音レベルが計算される．
 
-\subsection{可視化システム}
-VR 空間の構築及び CG 映像の作成には CAVELib を用いており,プログラムは C++ を用いている.VR 空間内において刻々と変化する高速鉄道の位置情報を入力し, 観測者位置における音圧レベルを評価することが可能である.また,VR 空間の観測者(システム利用者)は,歩行およびコントローラを用いて VR 空間内を自由に移動可能であり,その座標位置はトラッキング装置により瞬時に捕捉されるため,リアルタイムに騒音を体験することができる.
+可視化システムでは，UnityとXR Interaction ToolkitでVR空間を構築し，観測者位置で音圧レベルを評価できる．可聴化システムでは，幾何音響理論を基に音圧を計算し，Meta Quest 3の内蔵スピーカーまたはヘッドフォンを通じて立体音響信号として出力される．
 
-\subsection{可聴化システム}
-可聴化では,幾何音響理論に基づくモデルにより観測者位置における騒音レベルを計算し,その結果を音響プログラミングソフト Max を用いたプログラムによって音響計算結果に基づく立体音響信号を提示する.立体音響場の構築には,Ambisonics 手法4) を用いており,可視化と可聴化情報の共有は,OSC(Open Sound Control) プロトコルを用いた UDP/IP 通信によって行っている.
+VRデバイスには図\ref{fig:meta_quest3}に示すMeta Quest 3を使用する．この装置は，4つのアウトサイドイン・トラッキングカメラ，高解像度ディスプレイ（片目2064×2208），Snapdragon XR2 Gen 2プロセッサ，空間オーディオスピーカーから構成される．Meta Quest 3は完全ワイヤレスでの動作が可能であり，6DoF（6自由度）トラッキングにより高精度な位置・姿勢検出を実現している．
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=1.2cm,
+  box/.style={rectangle, draw, minimum width=2.8cm, minimum height=1.0cm, text centered, font=\scriptsize, align=center},
+  input/.style={box, fill=green!20, rounded corners=3pt},
+  process/.style={box, fill=blue!20},
+  calc/.style={box, fill=yellow!20},
+  output/.style={box, fill=orange!20, rounded corners=3pt},
+  system/.style={box, fill=gray!20},
+  arrow/.style={->, thick, >=stealth}
+]
+
+% 入力データ層
+\node[input] (input1) {車両走行条件\\設定};
+\node[input, right=1.5cm of input1] (input2) {音源の音響\\パワーレベル};
+\node[input, right=1.5cm of input2] (input3) {構造物・軌道\\形状データ};
+
+% Time Loop内の処理
+\node[process, below=1.8cm of input1] (track1) {音源位置\\トラッキング};
+\node[process, right=1.5cm of track1] (track2) {観測者位置\\トラッキング};
+
+% 音響計算部分
+\node[calc, below=1.5cm of track1] (calc1) {幾何音響理論\\に基づく計算};
+\node[calc, right=1.5cm of calc1] (calc2) {騒音レベル\\計算};
+
+% システム出力
+\node[system, below=1.5cm of calc1] (vis) {可視化\\システム};
+\node[system, right=1.5cm of vis] (audio) {可聴化\\システム};
+
+% 最終出力
+\node[output, below=1.5cm of vis] (screen) {スクリーン\\表示};
+\node[output, right=1.5cm of screen] (vr) {VR空間\\構築};
+\node[output, right=1.5cm of vr] (speaker) {スピーカー\\音響出力};
+
+% Time Loopの枠
+\draw[dashed, thick, blue] ($(track1.north west) + (-0.5,0.5)$) rectangle ($(calc2.south east) + (0.5,-0.5)$);
+\node[above right=0.1cm and -1.5cm of track1.north west, font=\small\bfseries, color=blue] {Time Loop};
+
+% 矢印の描画
+\draw[arrow] (input1) -- (track1);
+\draw[arrow] (input2) -- (calc1);
+\draw[arrow] (input3) -- (calc1);
+\draw[arrow] (track1) -- (calc1);
+\draw[arrow] (track2) -- (calc2);
+\draw[arrow] (calc1) -- (calc2);
+\draw[arrow] (calc2) -- (vis);
+\draw[arrow] (calc2) -- (audio);
+\draw[arrow] (vis) -- (screen);
+\draw[arrow] (vis) -- (vr);
+\draw[arrow] (audio) -- (speaker);
+
+% 横の矢印
+\draw[arrow] (track1) -- (track2);
+\draw[arrow] (calc1) -- (calc2);
+\draw[arrow] (vis) -- (audio);
+\draw[arrow] (screen) -- (vr);
+\draw[arrow] (vr) -- (speaker);
+
+\end{tikzpicture}
+\caption{浮上式高速鉄道騒音評価システムの構成}
+\label{fig:system_flow}
+\end{figure}
+
+\subsection{幾何音響理論に基づく音響計算}
+本研究では，日本音響学会道路交通騒音調査研究委員会のASJ RTN-Model 2018を用いて音響計算を行う．これは幾何音響理論に基づき，音源を半自由空間の点音源として扱うモデルである．
+
+\subsubsection{基本計算式}
+ASJモデルにおいて，受音点での音圧レベル$L_p$(dB)から音源の音響パワーレベル$L_W$(dB)を算出する式は以下の通りである：
+\begin{equation}
+L_W = L_p + 20\log_{10}r + 8 - \Delta L_{cor}
+\end{equation}
+ここで$r$は音源から受音点の距離，$\Delta L_{cor}$(dB)は回折や指向性による減衰の補正量である．
+
+\subsubsection{音圧レベルの合成}
+受音点での音源からの伝播音の圧力レベルの合成値$L_p$(dB)は次式で表される：
+\begin{equation}
+L_p = 10\log_{10}\sum_{i=1}^{n}(10^{L_{pi}/10})
+\end{equation}
+ここで$i$は合成する音源の数である．
+
+\subsubsection{物理現象の考慮}
+本システムでは以下の物理現象を考慮した音響計算を実装している：
+\begin{itemize}
+\item 距離減衰：$20\log_{10}(r)$による減衰
+\item 大気吸収：空気中での音波エネルギー損失
+\item 回折効果：遮音壁による音の回り込み（Maekawaチャートに基づく計算）
+\item ドップラー効果：$f' = f \cdot \frac{c}{c - v_s \cos\theta}$による周波数変化
+\end{itemize}
+
+\subsubsection{構造物音の考慮}
+走行時の車外騒音には，空気圧変動による空力音と，構造物振動による構造物音が影響を与える．本システムでは，より現実的な騒音環境を再現するため，構造物音を明示的に考慮したシミュレーションを実装している．
+
+構造物音は，走行中に発生する空力音に連動して移動する無指向性の仮想点音源として取り扱う．各走行音源位置から一定距離下方（本研究では1.5m下）に無指向性の仮想点音源を配置し，構造物振動による音響寄与を再現する．
+
+構造物音の音響パワーレベル$L_{W,str}$は走行速度の関数として次式で表される：
+\begin{equation}
+L_{W,str} = a + 30 \log_{10} V
+\end{equation}
+ここで，$V$は走行速度（km/h）で，定数$a$は橋種ごとに決定される．本研究では，コンクリート橋の箱桁構造を想定し定数$a$は35.9を用いた．走行速度500km/hの場合，仮想点音源の音響パワーレベルは114.8dBとなる．
+
+この構造物音の考慮により，単純な空力音のみのシミュレーションと比較して，より実際の高速鉄道走行時に近い複合的な音響環境を構築することが可能となった．
 
 %**********************************************************
-\section{適用例}
-前章の計算手法を用いた浮上式高速鉄道騒音シミュレーションの妥当性の検証のため,実際に VR 空間上で騒音計を用いて測定した音圧レベルの値と,指向性モデルを用いた計算値を比較した.
+\section{Meta Quest 3における音響処理問題と解決手法}
+\subsection{音割れ問題の発見と原因分析}
+本研究において最初に直面した最大の技術的課題は，Meta Quest 3でのリニアモーターカー走行音シミュレーションにおいて深刻な音割れが発生することであった．この問題は，システムの実用性を著しく損なう重大な障害となっていた．
 
-\subsection{測定条件}
-音源の音響パワーレベルを 120dB とした.受音点は音源から 20m 離れた位置とし,音源位置から 3m の高さとしている.なお,車両の CAD データは旧型の試験車両 MLX01 系を用いており,16 両編成としている.車両の速度は 500km/h とし,音源の位置は車両の連結部分の断面中心に設定した.(音源数 15)
+詳細な検証の結果，以下の条件において音割れが顕著に発生することが判明した：
+\begin{itemize}
+\item リニアモーターカーから受音点までの距離が近距離（5m以内）の場合
+\item 車両編成数が多い場合（特に16両編成時）
+\item 複数音源が同時に高音圧レベルで再生される状況
+\end{itemize}
 
-\subsection{解析結果}
-VR 空間上で騒音計を用いて測定した音圧レベルの値と,指向性モデルを用いた計算値を比較したグラフを図-3 に示す.車両編成を考慮した波形となっており,車両通過時は概ね形状が一致し,システムの妥当性を示すことができた.車両通過時の音圧レベルを比べると先頭車両通過時以外では概ね一致していることが確認できる. 車両通過前後では差異が生じているが,これは図-3 の車両通過前後に示すような,プロジェクターの動作音が主因となる暗騒音の影響によるものが考えられる.
+詳細な解析により，音割れの根本原因がUnityのAudio Mixerにおける音圧レベル範囲制限（-80dB〜0dB）にあることを特定した．この制約により，高音圧データ処理時にクリッピングが発生し，音質劣化を引き起こしていた．
 
-% % 図3のプレースホルダー
-% \begin{figure}[t]
-%     \centering
-%     % \includegraphics[width=0.9\linewidth]{pic/comparison.png}
-%     \caption{測定値と計算値の比較}
-%     \label{fig:comparison}
-% \end{figure}
+\subsection{体系的解決手法の検討と効果検証}
+音割れの根本原因を解明するため，体系的なアプローチによる対策検討を実施した．図\ref{fig:audio_distortion_solutions}に検証した解決手法の分類を示す．
 
-%**********************************************************
-\section{定常音の作成練習}
-今後の騒音測定に向け, 実音源から定常音への編集方法について学んだ. 定常音作成を行うことで, 各時間・空間ごとでの車両と観測者の位置座標により, 騒音の音の大きさを VR 上で再現可能になる. 質の良い定常音を作成することは CAVE でのシミュレーションのリアリティ向上に大きく影響してくる. そのため理解を深めるため, 練習もかねて既存の実音源を定常音化を行った. また既存の定常音もあるため, 自身で作成した定常音との比較を行った.
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[
+  node distance=1.5cm,
+  method/.style={rectangle, draw, minimum width=4.5cm, minimum height=1.2cm, text centered, font=\footnotesize, align=center},
+  hardware/.style={method, fill=red!20},
+  software/.style={method, fill=blue!20},
+  external/.style={method, fill=green!20},
+  advanced/.style={method, fill=orange!20},
+  result/.style={font=\tiny, align=center},
+  arrow/.style={->, thick, >=stealth}
+]
 
-\subsection{作成手順}
-まず走行時騒音の定常音になりうる音を抽出し, 複製を行う. 複製された音源を結合していく. ここで結合時に音源の繋がり部で不自然な音が発生しない用に修正を行う. 今回は図-4 に示す, 位相をずらした音源を複製し重ね合わせ定常音化する重ね合わせという修正と, 図-5 に示す複製された音源から順再生と逆再生を作成しそれらを交互に並べ定常音化するピンポンループという修正を行った. 今回使用する測定された実音源は去年測定を行った都留保守基地側で東京から名古屋方面へと走行するリニア新幹線の音源である. 受音点は音源から 5m 離れた位置とし, 人の身長を考慮して地上から 1.5m の高さとしている.なお 5 両編成とし, 車両の速度は 500km/h である. 今回は車両中心の 3 音源を抽出, 複製し作成した定常音, 中心の 1 音源を抽出, 複製した定常音, 中心より 1 つはやく発生した 1 音源を抽出, 複製し, 作成した定常音の三種類それぞれで重ね合わせなし, 二分の一波長位相重ね合わせあり, 三分の一波長位相重ね合わせあり, 五分の一波長位相重ね合わせあり, 重ね合わせなしピンポンループにおいて結合部が修正された定常音の作成を行った. その中でも既存の定常音に近しい音源では CAVE で実装し, その結果の解析, 比較を行った.
+% 問題の定義
+\node[method, fill=gray!30] (problem) {Meta Quest 3\\音割れ問題};
 
-% % 図4, 5のプレースホルダー
-% \begin{figure}[h]
-%     \centering
-%     % \includegraphics[width=0.9\linewidth]{pic/overlap.png}
-%     \caption{重ね合わせの概要}
-%     \label{fig:overlap}
-% \end{figure}
-% \begin{figure}[h]
-%     \centering
-%     % \includegraphics[width=0.9\linewidth]{pic/pingpong.png}
-%     \caption{ピンポンループの概要}
-%     \label{fig:pingpong}
-% \end{figure}
+% 検証手法の分類
+\node[hardware, below left=1.5cm and -2cm of problem] (method1) {手法1：\\Meta Quest 3本体\\音量調整};
+\node[software, below=1.5cm of method1] (method2) {手法2：\\車両音源\\音圧レベル調整};
+\node[external, below=1.5cm of method2] (method3) {手法3：\\Meta Quest Link\\PC出力};
+\node[advanced, below=1.5cm of method3] (method4) {手法4：\\Audio Mixer回避\\独自プログラム開発};
+\node[advanced, below right=1.5cm and -2cm of problem] (method5) {手法5：\\OSC通信\\外部デバイス連携};
 
-\subsection{比較結果}
-今回は全 15 種類の定常音を作成したが, 中には複製された音源の結合部がうまくいかず不自然な音が聴こえてしまう定常音も出来てしまった. そのため中でも違和感の少ない車両中心の 3 音源を抽出, 複製し作成した定常音と中心より 1 つはやく発生した 1 音源を抽出, 複製し, 作成した定常音の二つから重ね合わせなし, 二分の一波長位相重ね合わせあり, 重ね合わせなしピンポンループの結合部での修正を比較する. まず作成された定常音についての比較だが, 図-6, 図-7 に示すように既存の定常音源と波形が概ね一致していることがわかる. しかし CAVE 内で行った結果を比較すると図-8 卓越周波数であるはずの 6000 から 7000Hz での周波数領域でスペクトルレベルが卓越していないことがわかる. これは音源数が 1 つの場合でのほうが既存の定常音を用いた結果の波形に近いが図-9, どちらの結果のどの結合部の修正を行った場合でも波形が一致しているとはいえない結果となった.
+% 結果の表示
+\node[result, right=2.5cm of method1] (result1) {効果：×\\音割れ改善せず};
+\node[result, right=2.5cm of method2] (result2) {効果：△\\部分的改善\\音圧不足};
+\node[result, right=2.5cm of method3] (result3) {効果：×\\音割れ改善せず};
+\node[result, right=2.5cm of method4] (result4) {効果：○\\音割れ大幅改善\\暫定的解決};
+\node[result, right=2.5cm of method5] (result5) {効果：？\\検討段階};
 
-% % 図6, 7などのプレースホルダー
-% \begin{figure}[t]
-%     \centering
-%     % \includegraphics[width=0.9\linewidth]{pic/compare_3sources.png}
-%     \caption{定常音化の比較 (音源数 3)}
-%     \label{fig:compare_3sources}
-% \end{figure}
-% \begin{figure}[t]
-%     \centering
-%     % \includegraphics[width=0.9\linewidth]{pic/compare_1source.png}
-%     \caption{定常音化の比較 (音源数 1)}
-%     \label{fig:compare_1source}
-% \end{figure}
+% 最終解決
+\node[method, fill=yellow!30, below=3.5cm of problem] (final) {最終解決：\\Unity 2023/6000移行\\AAudioドライバ};
+\node[result, right=2.5cm of final] (final_result) {効果：◎\\根本的解決};
+
+% 矢印の描画
+\draw[arrow] (problem) -- (method1);
+\draw[arrow] (problem) -- (method5);
+\draw[arrow] (method1) -- (method2);
+\draw[arrow] (method2) -- (method3);
+\draw[arrow] (method3) -- (method4);
+
+\draw[arrow] (method1) -- (result1);
+\draw[arrow] (method2) -- (result2);
+\draw[arrow] (method3) -- (result3);
+\draw[arrow] (method4) -- (result4);
+\draw[arrow] (method5) -- (result5);
+
+\draw[arrow, thick, red] (problem) -- (final);
+\draw[arrow, thick, red] (final) -- (final_result);
+
+% 分類ラベル
+\node[above=0.3cm of method1, font=\scriptsize\bfseries, color=red] {ハードウェア系};
+\node[left=0.3cm of method2, font=\scriptsize\bfseries, color=blue] {ソフトウェア系};
+\node[left=0.3cm of method3, font=\scriptsize\bfseries, color=green] {外部機器系};
+\node[left=0.3cm of method4, font=\scriptsize\bfseries, color=orange] {高度対策系};
+
+\end{tikzpicture}
+\caption{音割れ問題に対する検証手法の体系的分類}
+\label{fig:audio_distortion_solutions}
+\end{figure}
+
+検証した5つの解決手法とその効果を以下にまとめる：
+
+\textbf{手法1：Meta Quest 3本体音量調整}
+デバイス本体の音量設定を段階的に低下させたが，音割れの改善は認められなかった．この結果から，問題がハードウェアの物理的制約ではなく，ソフトウェア処理に起因することが示唆された．
+
+\textbf{手法2：車両音源音圧レベル調整}
+音源の音響パワーレベルを120dBから110dBへ変更により音割れは部分的に軽減されたが，同時に全体的な音圧が不十分となり，リアリティの観点から実用的ではないことが判明した．
+
+\textbf{手法3：Meta Quest Link PC出力}
+PC接続を通じた外部音響出力も検討したが，最終的な音響処理がUnityのAudio Mixerを経由するため，根本的な解決には至らなかった．
+
+\textbf{手法4：Audio Mixer回避独自プログラム開発}
+Audio Mixerを使用しない独自の音源合成アルゴリズムを開発した．音圧レベル（dB）から線形スケール（0〜1）への変換処理により，各音源データのvolumeパラメータへ直接適用する手法である．16両編成車両による近距離シミュレーションにおいて音割れの大幅な改善を確認したが，暫定的な対処法に留まった．
+
+\textbf{手法5：OSC通信外部デバイス連携}
+UDP通信による外部音響デバイスとの連携も検討段階として位置づけられた．
+
+\subsection{Unity移行による根本的解決}
+多様な対処法を検討した結果，最終的にUnityエンジンのバージョン移行により音割れ問題が根本的に解決された．Unity 2021.2.19f1からUnity 6000への段階的移行を実施し，特にUnity 2023年版で実装されたAAudioドライバが決定的な改善をもたらした．
+
+従来のOpenSL ESアーキテクチャと比較して，AAudioドライバは以下の技術的優位性を提供した：
+\begin{itemize}
+\item \textbf{バッファオーバーフロー防止}：高音圧データ処理時の安定性向上
+\item \textbf{ハードウェア直接制御}：中間層を排除した効率的データ転送
+\item \textbf{低レイテンシ処理}：リアルタイム音響シミュレーションに最適化
+\item \textbf{マルチソース対応}：複数音源の同時高品質再生
+\end{itemize}
+
+Unity 6000への移行完了後，従来問題となっていた全ての条件（16両編成・近距離5m・高音圧レベル）において音割れが完全に解消された．これにより，Audio Mixer回避やOSC通信等の複雑な回避策が全て不要となり，シンプルで安定したシステム構成を実現した．
 
 %**********************************************************
 \section{おわりに}
-以下に結論をまとめる. 車両の通過時では計算値と測定値が概ね一致した.しかし,車両接近時と通過後では測定値との差が発生した.これはCAVE作動音などの暗騒音による影響, また室内での測定のため出力された音が残留している影響であると考える. またV R 空間内でのス
+本研究では，Meta Quest 3を用いた浮上式高速鉄道騒音評価システムにおける深刻な音割れ問題の根本的解決に取り組み，実用的な高品質VR騒音体験システムの構築を実現した．
+
+解析結果として，音割れ問題の根本原因がUnityのAudio Mixer制約にあることを特定し，5つの対策手法を体系的に検証した結果，Unity 2021から6000への段階的バージョン移行により問題が完全に解決された．主な要因は2023年版で導入されたAAudioドライバによるオーディオ処理の根本的改善と考えられる．
+
+また，本研究により以下の成果が得られた：
+\begin{itemize}
+\item Unity 2023年版AAudioドライバにより16両編成・近距離（5m）での安定した高音圧シミュレーションが実現された
+\item 複雑な回避策（Audio Mixer回避，OSC通信等）が不要となり，シンプルで堅牢なシステム構成を確立した
+\item 幾何音響理論に基づく統合的音響計算エンジン（距離減衰，大気吸収，回折効果，ドップラー効果，構造物音）の実装が完了した
+\item JR東海との産学連携による6回の技術報告会を通じてシステムの実用性が検証された
+\end{itemize}
+
+本システムは，リニア中央新幹線等の大規模インフラプロジェクトにおける騒音影響の事前評価と住民合意形成において重要な役割を果たすことが期待される．
+
+今後は，Mixed Reality技術の導入による現実環境との重畳表示，多様な車両編成・運行シナリオへの対応拡張，さらなる音響計算精度の向上等により，実用性の更なる向上を図る予定である．
 
 %**********************************************************
-% 参考文献リスト
+参考文献
 \begin{thebibliography}{9}
-    % \bibitem{キー} 著者名: 論文名, 雑誌名, 巻, 号, pp.開始ページ-終了ページ, 発行年.
-    \bibitem{ray_tracing} Kuttruff, H.: Room Acoustics, 5th ed., Spon Press, 2009.
-    \bibitem{binaural} Blauert, J.: Spatial Hearing: The Psychophysics of Human Sound Localization, The MIT Press, 1997.
-    \bibitem{train_noise} Thompson, D. J.: Railway Noise and Vibration: Mechanisms, Modelling and Means of Control, Elsevier, 2008.
+\bibitem{ref1} 西航平, 宮内暖季, 樫山和男：VR 技術を用いた浮上式高速鉄道騒音評価システムの高精度化，第 51 回土木学会関東支部技術研究発表会講演概要集，VII-15， 2024．
+\bibitem{ref2} 日本音響学会道路交通騒音調査研究委員会：道路交通騒音の予測モデル"ASJ RTN-Model 2023"，日本音響学会誌，2023.
 \end{thebibliography}
 
 \end{document}
