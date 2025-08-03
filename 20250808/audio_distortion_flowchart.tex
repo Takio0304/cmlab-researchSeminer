@@ -1,0 +1,68 @@
+\documentclass[dvipdfmx]{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+
+% フローチャートの各要素のスタイルを定義します
+% processスタイル: 通常の四角い箱
+\tikzstyle{process} = [
+    rectangle, 
+    draw=black, 
+    thick, 
+    text centered, 
+    minimum height=1.2cm, % 箱の最小の高さ
+    text width=5cm  % テキストがこの幅を超えたら自動で改行
+]
+
+% lineスタイル: ノード間をつなぐ実線
+\tikzstyle{line} = [thick]
+
+\begin{document}
+
+% tikzpicture環境内で図を描画します
+% node distanceでノード間の基本的な距離を指定します (縦 and 横)
+\begin{tikzpicture}[node distance=2cm and 2.5cm]
+
+% --- ノードの配置 ---
+
+% Level 0 (一番左の階層)
+\node (root) [process, text width=2cm] {音割れの原因};
+
+% Level 1 (中央の階層)
+% yshiftで垂直方向の位置を調整し、分岐間のスペースを確保します
+\node (meta)  [process, right=of root, yshift=4.5cm] {MetaQuest3のスピーカーの問題};
+\node (unity) [process, right=of root, yshift=-3.0cm] {Unityの問題};
+
+% Level 2 (一番右の階層)
+\node (meta1) [process, right=of meta, yshift=1.2cm] {スピーカーのボリュームを下げる};
+\node (meta2) [process, right=of meta, yshift=-1.2cm] {PCから音を同時出力する};
+
+% 4つの項目を均等に配置するためにyshiftを調整
+\node (unity1) [process, right=of unity, yshift=3.6cm] {音源の音響パワーレベルを下げる};
+\node (unity2) [process, right=of unity, yshift=1.2cm] {AudioMixerを使わずに音源合成};
+\node (unity3) [process, right=of unity, yshift=-1.2cm] {可聴化のみを別のソフトで実行する};
+\node (unity4) [process, right=of unity, yshift=-3.6cm] {Unityのバージョンアップ};
+
+
+% --- ノード間の接続 ---
+
+% rootからの接続
+% (node.east)はノードの右辺中央のアンカーポイントを示します
+% -- ++(1.25cm,0) で右に1.25cm水平線を描画します
+% |- (node.west) でそこから垂直に曲がり、ターゲットノードの左辺中央に接続します
+\draw[line] (root.east) -- ++(1.25cm,0) |- (meta.west);
+\draw[line] (root.east) -- ++(1.25cm,0) |- (unity.west);
+
+% metaからの接続
+\draw[line] (meta.east) -- ++(1.25cm,0) |- (meta1.west);
+\draw[line] (meta.east) -- ++(1.25cm,0) |- (meta2.west);
+
+% unityからの接続
+\draw[line] (unity.east) -- ++(1.25cm,0) |- (unity1.west);
+\draw[line] (unity.east) -- ++(1.25cm,0) |- (unity2.west);
+\draw[line] (unity.east) -- ++(1.25cm,0) |- (unity3.west);
+\draw[line] (unity.east) -- ++(1.25cm,0) |- (unity4.west);
+
+\end{tikzpicture}
+
+\end{document}

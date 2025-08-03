@@ -1,0 +1,70 @@
+\documentclass{standalone}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+
+\begin{document}
+
+\tikzset{
+  problem/.style={rectangle, rounded corners, draw=black, thick, text centered, minimum width=3cm, minimum height=1cm, fill=gray!20},
+  hypothesis/.style={rectangle, draw=black, thick, text centered, minimum width=2.5cm, minimum height=0.8cm},
+  hw/.style={hypothesis, fill=red!20},
+  sw/.style={hypothesis, fill=blue!20},
+  method/.style={rectangle, draw=black, text centered, minimum width=2cm, minimum height=0.7cm},
+  hw_method/.style={method, fill=red!10},
+  sw_method/.style={method, fill=blue!10},
+  result/.style={circle, draw=black, text centered, minimum size=0.8cm, fill=yellow!20},
+  conclusion/.style={rectangle, rounded corners, draw=black, thick, text centered, minimum width=2.5cm, minimum height=0.8cm, fill=green!20},
+  myarrow/.style={->, thick, >=stealth}
+}
+
+\begin{tikzpicture}[node distance=1.5cm and 2cm]
+
+% 問題
+\node[problem] (problem) {Meta Quest 3\\Audio Problem};
+
+% 仮説
+\node[hw, above right=0.5cm and 3cm of problem] (hw_hyp) {Hardware\\Hypothesis};
+\node[sw, below right=0.5cm and 3cm of problem] (sw_hyp) {Software\\Hypothesis};
+
+% 検証手法 - ハードウェア系
+\node[hw_method, above right=0.5cm and 3cm of hw_hyp] (method1) {Method1\\Volume};
+\node[hw_method, below right=0.5cm and 3cm of hw_hyp] (method3) {Method3\\External PC};
+
+% 検証手法 - ソフトウェア系  
+\node[sw_method, above right=0.5cm and 3cm of sw_hyp] (method2) {Method2\\Audio Level};
+\node[sw_method, right=3cm of sw_hyp] (method4) {Method4\\Mixer Bypass};
+\node[sw_method, below right=0.5cm and 3cm of sw_hyp] (method5) {Method5\\External Link};
+\node[sw_method, below=1cm of method5] (method6) {Method6\\Unity Migration};
+
+% 結果
+\node[result, right=2cm of method1] (result1) {F};
+\node[result, right=2cm of method3] (result3) {F};
+\node[result, right=2cm of method2] (result2) {P};
+\node[result, right=2cm of method4] (result4) {G};
+\node[result, right=2cm of method5] (result5) {?};
+\node[result, right=2cm of method6] (result6) {E};
+
+% 結論
+\node[conclusion, right=3cm of result4] (conclusion) {Conclusion\\Software Issue};
+
+% 矢印
+\draw[myarrow] (problem) -- (hw_hyp);
+\draw[myarrow] (problem) -- (sw_hyp);
+\draw[myarrow] (hw_hyp) -- (method1);
+\draw[myarrow] (hw_hyp) -- (method3);
+\draw[myarrow] (sw_hyp) -- (method2);
+\draw[myarrow] (sw_hyp) -- (method4);
+\draw[myarrow] (sw_hyp) -- (method5);
+\draw[myarrow] (sw_hyp) -- (method6);
+\draw[myarrow] (method1) -- (result1);
+\draw[myarrow] (method3) -- (result3);
+\draw[myarrow] (method2) -- (result2);
+\draw[myarrow] (method4) -- (result4);
+\draw[myarrow] (method5) -- (result5);
+\draw[myarrow] (method6) -- (result6);
+\draw[myarrow, very thick, green!70!black] (result6) -- (conclusion);
+
+\end{tikzpicture}
+
+\end{document}

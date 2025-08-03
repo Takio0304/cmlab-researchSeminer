@@ -1,2272 +1,814 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.18)  29 JUL 2025 17:06
+This is e-upTeX, Version 3.141592653-p4.1.2-u2.00-250202-2.6 (utf8.sjis) (TeX Live 2025) (preloaded format=platex 2025.7.29)  3 AUG 2025 13:44
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex
-(d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex
+**B4_masuda_20250808.tex
+(./B4_masuda_20250808.tex
+pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-07-11>
+L3 programming layer <2025-07-19>
 (c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsarticle.cls
-
-c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jsarticle.cls:14: LaTeX Error: This file needs format `pLaTeX2e'
-               but this is `LaTeX2e'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.14 \NeedsTeXFormat{pLaTeX2e}
-                              
-The current input file will not be processed further,
-because it was written for some other flavor of TeX.
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+Document Class: jsarticle 2025/04/27 jsclasses (okumura, texjporg)
+Class jsarticle Info: Autodetected engine: pLaTeX on input line 236.
+\jsc@mpt=\dimen164
+\jsc@mmm=\dimen165
+\jsc@smallskipamount=\skip49
+LaTeX Info: Redefining \textmc on input line 511.
+LaTeX Info: Redefining \textgt on input line 513.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 575.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+\fullwidth=\dimen166
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+\c@part=\count274
+\c@section=\count275
+\c@subsection=\count276
+\c@subsubsection=\count277
+\c@paragraph=\count278
+\c@subparagraph=\count279
+\@abstractbox=\box70
+\c@figure=\count280
+\c@table=\count281
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\jsc@tocl@width=\dimen167
+\@lnumwidth=\dimen168
+\bibindent=\dimen169
+(c:/texlive/2025/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count282
 ) (./cmlab_4.00.sty
+Package: cmlab_4.00 
+(c:/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count283
+\calc@Bcount=\count284
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count285
+\calc@Cskip=\skip54
+)
+(c:/texlive/2025/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\@word=\box71
+\@addr=\box72
+\@keyw=\box73
+\@foot=\box74
 
-./cmlab_4.00.sty:38: LaTeX Error: This file needs format `pLaTeX2e'
-               but this is `LaTeX2e'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \NeedsTeXFormat{pLaTeX2e}
-                              [2001/09/04]
-The current input file will not be processed further,
-because it was written for some other flavor of TeX.
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./cmlab_4.00.sty:38: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \NeedsTeXFormat{pLaTeX2e}[
-                               2001/09/04]
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Missing character: There is no [ in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 9 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ] in font nullfont!
+(c:/texlive/2025/texmf-dist/tex/latex/type1cm/type1cm.sty
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+)
+\@mylength=\skip55
+\@keywordslength=\skip56
 ) (./cmlabplus.sty
+Package: cmlabplus 
 
-./cmlabplus.sty:10: LaTeX Error: This file needs format `pLaTeX2e'
-               but this is `LaTeX2e'.
+(c:/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box75
+\extrarowheight=\dimen173
+\NC@list=\toks18
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box76
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/06/16 v2.17y AMS math features
+\@mathmargin=\skip59
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 \NeedsTeXFormat{pLaTeX2e}
-                              [2001/09/04]
-The current input file will not be processed further,
-because it was written for some other flavor of TeX.
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
 
-Missing character: There is no [ in font nullfont!
-Missing character: There is no 2 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 9 in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no ] in font nullfont!
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen174
+))
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen175
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count286
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count287
+\leftroot@=\count288
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count289
+\DOTSCASE@=\count290
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box77
+\strutbox@=\box78
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count291
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count292
+\dotsspace@=\muskip17
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
+\tag@help=\toks20
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
+\andhelp@=\toks21
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks22
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2949.
+LaTeX Info: Redefining \] on input line 2950.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(c:/texlive/2025/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(c:/texlive/2025/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+
+(c:/texlive/2025/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+\@savetbaselineshift=\dimen183
+\@saveybaselineshift=\dimen184
+\scb@x=\box79
+\scscb@x=\box80
+\@bw=\dimen185
+\@nbox=\box81
+\@nbody=\box82
+\@scw=\dimen186
+\ascmac@hoboxa=\box83
+\ascmac@hoboxb=\box84
+\@itemh=\dimen187
+\@iboxpos=\toks24
+\@iboxstr=\box85
+\@bwsp=\box86
+\@@bwsp=\box87
+\@bcal=\count298
+\shaderule=\dimen188
+))
+(c:/texlive/2025/texmf-dist/tex/latex/tools/dcolumn.sty
+Package: dcolumn 2023/07/08 v1.06 decimal alignment package (DPC)
+) (./exttab.sty
+\boldarrayrulewidth=\skip62
+\@cla=\count299
+\@clb=\count300
+)
+(c:/texlive/2025/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box88
+\shadowsize=\dimen189
+\@Sbox=\box89
+\do@VerbBox=\toks25
+\the@fancyput=\toks26
+\this@fancyput=\toks27
+\EndVerbatimTokens=\toks28
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read2
+) (./secprogram.sty
+Package: secprogram 
+ (c:/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: dvips.def on input line 149.
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)) (./bs2yen.sty
+Package: bs2yen 
+\verbatimbaselineskip=\dimen190
+\verbatimleftmargin=\dimen191
+)
+\preprogramskip=\skip63
+\postprogramskip=\skip64
+\programleftmargin=\dimen192
+\linenowidth=\dimen193
+\c@prglineno=\count301
+\c@prglastlineno=\count302
+\c@program=\count303
+)
+(c:/texlive/2025/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen194
+\TX@old@table=\dimen195
+\TX@old@col=\dimen196
+\TX@target=\dimen197
+\TX@delta=\dimen198
+\TX@cols=\count304
+\TX@ftn=\toks29
+)
+\c@klist=\count305
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
-Overfull \hbox (20.0pt too wide) in paragraph at lines 38--27
-[]
- []
 
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks30
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
 (c:/texlive/2025/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: dvipdfmx.def on input line 106.
- (c:/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
 ))
-\Gin@req@height=\dimen148
-\Gin@req@width=\dimen149
-) (c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (c:/texlive/2025/texmf-dist/tex/latex/preprint/balance.sty
-Package: balance 1999/02/23 4.3 (PWD)
-\oldvsize=\dimen150
-) (c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen151
-\captionmargin=\dimen152
-\caption@leftmargin=\dimen153
-\caption@rightmargin=\dimen154
-\caption@width=\dimen155
-\caption@indent=\dimen156
-\caption@parindent=\dimen157
-\caption@hangindent=\dimen158
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-Package caption Info: Document class w/o caption stuff detected.
+\Gin@req@height=\dimen199
+\Gin@req@width=\dimen256
 )
-\c@caption@flags=\count275
-\c@continuedfloat=\count276
-))
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:14: Undefined control sequence.
-<argument> \undefinedpagestyle 
-                               
-l.14 \pagestyle{cmlabw}
-                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(c:/texlive/2025/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(c:/texlive/2025/texmf-dist/tex/latex/preprint/balance.sty
+Package: balance 1999/02/23 4.3 (PWD)
+\oldvsize=\dimen257
+)
+(c:/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 
-(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
-) (./B4_masuda_20250808.aux)
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(c:/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen258
+\captionmargin=\dimen259
+\caption@leftmargin=\dimen260
+\caption@rightmargin=\dimen261
+\caption@width=\dimen262
+\caption@indent=\dimen263
+\caption@parindent=\dimen264
+\caption@hangindent=\dimen265
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2-> \vskip 0.5zh plus 0.25
+zh minus 0.25zh \setbox \@tempboxa \hbox {\small #1\quad #2} \ifdim \wd \@tempb
+oxa >\hsize \@hangfrom {\small #1\quad }\small #2 \else \hbox to\hsize {\hfil \
+box \@tempboxa \hfil } \vskip 0.5zh plus 0.25zh minus 0.25zh \fi  on input line
+ 1175.
+)
+
+Package caption Warning: Unknown document class (or package),
+(caption)                standard defaults will be used.
+See the caption package documentation for explanation.
+
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
+)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count308
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count309
+) (c:/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen266
+\pgfutil@tempdimb=\dimen267
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box90
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2023-01-15 v3.1.10 (3.1.10)
+))
+Package: pgf 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.co
+de.tex
+\pgfkeys@tmptoks=\toks34
+))
+\pgf@x=\dimen268
+\pgf@y=\dimen269
+\pgf@xa=\dimen270
+\pgf@ya=\dimen271
+\pgf@xb=\dimen272
+\pgf@yb=\dimen273
+\pgf@xc=\dimen274
+\pgf@yc=\dimen275
+\pgf@xd=\dimen276
+\pgf@yd=\dimen277
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count310
+\c@pgf@countb=\count311
+\c@pgf@countc=\count312
+\c@pgf@countd=\count313
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+\pgf@sys@id@count=\count314
+ (c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
+)
+Driver file for pgf: pgfsys-dvipdfmx.def
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
+)
+\pgfsys@objnum=\count315
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 274.
+LaTeX Info: Redefining \color on input line 762.
+
+(c:/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen278
+\pgfmath@count=\count318
+\pgfmath@box=\box91
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
+.code.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count319
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@picminx=\dimen279
+\pgf@picmaxx=\dimen280
+\pgf@picminy=\dimen281
+\pgf@picmaxy=\dimen282
+\pgf@pathminx=\dimen283
+\pgf@pathmaxx=\dimen284
+\pgf@pathminy=\dimen285
+\pgf@pathmaxy=\dimen286
+\pgf@xx=\dimen287
+\pgf@xy=\dimen288
+\pgf@yx=\dimen289
+\pgf@yy=\dimen290
+\pgf@zx=\dimen291
+\pgf@zy=\dimen292
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
+File: pgfcorepathconstruct.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@path@lastx=\dimen293
+\pgf@path@lasty=\dimen294
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
+File: pgfcorepathusage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@shorten@end@additional=\dimen295
+\pgf@shorten@start@additional=\dimen296
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfpic=\box92
+\pgf@hbox=\box93
+\pgf@layerbox@main=\box94
+\pgf@picture@serial@count=\count320
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
+File: pgfcoregraphicstate.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgflinewidth=\dimen297
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
+File: pgfcoretransformations.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@pt@x=\dimen298
+\pgf@pt@y=\dimen299
+\pgf@pt@temp=\dimen300
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
+File: pgfcorepathprocessing.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowsep=\dimen301
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@max=\dimen302
+\pgf@sys@shading@range@num=\count321
+\pgf@shadingcount=\count322
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfexternal@startupbox=\box95
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
+File: pgfcoretransparency.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (c:/texlive/2025/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
+File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodeparttextbox=\box96
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
+Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
+\pgf@nodesepstart=\dimen303
+\pgf@nodesepend=\dimen304
+)
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
+Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
+)) (c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(c:/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
+\pgffor@iter=\dimen305
+\pgffor@skip=\dimen306
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
+File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgf@plot@mark@count=\count323
+\pgfplotmarksize=\dimen307
+)
+\tikz@lastx=\dimen308
+\tikz@lasty=\dimen309
+\tikz@lastxsaved=\dimen310
+\tikz@lastysaved=\dimen311
+\tikz@lastmovetox=\dimen312
+\tikz@lastmovetoy=\dimen313
+\tikzleveldistance=\dimen314
+\tikzsiblingdistance=\dimen315
+\tikz@figbox=\box97
+\tikz@figbox@bg=\box98
+\tikz@tempbox=\box99
+\tikz@tempbox@bg=\box100
+\tikztreelevel=\count324
+\tikznumberofchildren=\count325
+\tikznumberofcurrentchild=\count326
+\tikz@fig@count=\count327
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfmatrixcurrentrow=\count328
+\pgfmatrixcurrentcolumn=\count329
+\pgf@matrix@numberofcolumns=\count330
+)
+\tikz@expandcount=\count331
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box101
+\pgfnodeparttwobox=\box102
+\pgfnodepartthreebox=\box103
+\pgfnodepartfourbox=\box104
+\pgfnodeparttwentybox=\box105
+\pgfnodepartnineteenbox=\box106
+\pgfnodeparteighteenbox=\box107
+\pgfnodepartseventeenbox=\box108
+\pgfnodepartsixteenbox=\box109
+\pgfnodepartfifteenbox=\box110
+\pgfnodepartfourteenbox=\box111
+\pgfnodepartthirteenbox=\box112
+\pgfnodeparttwelvebox=\box113
+\pgfnodepartelevenbox=\box114
+\pgfnodeparttenbox=\box115
+\pgfnodepartninebox=\box116
+\pgfnodeparteightbox=\box117
+\pgfnodepartsevenbox=\box118
+\pgfnodepartsixbox=\box119
+\pgfnodepartfivebox=\box120
+)))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen316
+))
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)
+(c:/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2025-06-09 L3 backend support: dvips
+\l__pdfannot_backend_content_box=\box121
+\l__pdfannot_backend_model_box=\box122
+\g__pdfannot_backend_int=\count332
+\g__pdfannot_backend_link_int=\count333
+\g__pdfannot_backend_link_sf_int=\count334
+)
+(./B4_masuda_20250808.aux)
 \openout1 = `B4_masuda_20250808.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:23: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 \begin{document}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:27: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 \twocolumn
-               [%
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[1]
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: Undefined control sequence.
-<argument> \presendate 
-                       {1}{2025}{8}{8} \papertitle {幾何音響理論に基...
-l.31 ]
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: Undefined control sequence.
-<argument> ...sendate {1}{2025}{8}{8} \papertitle 
-                                                  {幾何音響理論に基�...
-l.31 ]
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 幾 (U+5E7E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 何 (U+4F55)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 音 (U+97F3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 響 (U+97FF)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 理 (U+7406)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 論 (U+8AD6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character に (U+306B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 基 (U+57FA)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character づ (U+3065)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character く (U+304F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 高 (U+9AD8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 速 (U+901F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 鉄 (U+9244)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 道 (U+9053)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 騒 (U+9A12)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 音 (U+97F3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character の (U+306E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character リ (U+30EA)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character ア (U+30A2)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character ル (U+30EB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character タ (U+30BF)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character イ (U+30A4)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character ム (U+30E0)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 可 (U+53EF)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 聴 (U+8074)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 化 (U+5316)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character シ (U+30B7)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character ス (U+30B9)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character テ (U+30C6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character ム (U+30E0)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character の (U+306E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 構 (U+69CB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 築 (U+7BC9)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: Undefined control sequence.
-<argument> ...��化システムの構築} \writer 
-                                                  {r}{中央大学理工学�...
-l.31 ]
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 中 (U+4E2D)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 央 (U+592E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 大 (U+5927)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 学 (U+5B66)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 理 (U+7406)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 工 (U+5DE5)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 学 (U+5B66)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 部 (U+90E8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 都 (U+90FD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 市 (U+5E02)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 環 (U+74B0)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 境 (U+5883)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 学 (U+5B66)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 科 (U+79D1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 　 (U+3000)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 学 (U+5B66)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 部 (U+90E8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character ４ (U+FF14)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 年 (U+5E74)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 増 (U+5897)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 田 (U+7530)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 　 (U+3000)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:31: LaTeX Error: Unicode character 樹 (U+6A39)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 ]
-      
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:34: Undefined control sequence.
-l.34 \section
-             {はじめに}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:34: LaTeX Error: Unicode character は (U+306F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \section{は
-                 じめに}
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:34: LaTeX Error: Unicode character じ (U+3058)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \section{はじ
-                    めに}
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:34: LaTeX Error: Unicode character め (U+3081)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \section{はじめ
-                       に}
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:34: LaTeX Error: Unicode character に (U+306B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 \section{はじめに
-                          }
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character リ (U+30EA)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リ
-        ニア中央新幹線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ニ (U+30CB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニ
-           ア中央新幹線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ア (U+30A2)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア
-              中央新幹線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 中 (U+4E2D)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中
-                 央新幹線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 央 (U+592E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央
-                    新幹線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 新 (U+65B0)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新
-                       幹線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 幹 (U+5E79)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹
-                          線に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 線 (U+7DDA)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線
-                             に代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character に (U+306B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に
-                                代表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 代 (U+4EE3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に代
-                                   表される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 表 (U+8868)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に代表
-                                      される電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character さ (U+3055)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に代表さ
-                                         れる電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character れ (U+308C)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に代表され
-                                            る電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character る (U+308B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に代表される
-                                               電磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 電 (U+96FB)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 リニア中央新幹線に代表される電
-                                                  磁気浮上式高速鉄�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 磁 (U+78C1)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ア中央新幹線に代表される電磁
-                                                  気浮上式高速鉄道�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 気 (U+6C17)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...中央新幹線に代表される電磁気
-                                                  浮上式高速鉄道は�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 浮 (U+6D6E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...央新幹線に代表される電磁気浮
-                                                  上式高速鉄道は，�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 上 (U+4E0A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...新幹線に代表される電磁気浮上
-                                                  式高速鉄道は，国�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 式 (U+5F0F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...幹線に代表される電磁気浮上式
-                                                  高速鉄道は，国家�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 高 (U+9AD8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...線に代表される電磁気浮上式高
-                                                  速鉄道は，国家的�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 速 (U+901F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...に代表される電磁気浮上式高速
-                                                  鉄道は，国家的プ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 鉄 (U+9244)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...代表される電磁気浮上式高速鉄
-                                                  道は，国家的プロ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 道 (U+9053)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...表される電磁気浮上式高速鉄道
-                                                  は，国家的プロジ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character は (U+306F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...される電磁気浮上式高速鉄道は
-                                                  ，国家的プロジェ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ， (U+FF0C)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...れる電磁気浮上式高速鉄道は，
-                                                  国家的プロジェク�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 国 (U+56FD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...る電磁気浮上式高速鉄道は，国
-                                                  家的プロジェクト�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 家 (U+5BB6)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...電磁気浮上式高速鉄道は，国家
-                                                  的プロジェクトと�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 的 (U+7684)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...磁気浮上式高速鉄道は，国家的
-                                                  プロジェクトとし�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character プ (U+30D7)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...気浮上式高速鉄道は，国家的プ
-                                                  ロジェクトとして�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ロ (U+30ED)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...浮上式高速鉄道は，国家的プロ
-                                                  ジェクトとして本�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ジ (U+30B8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...上式高速鉄道は，国家的プロジ
-                                                  ェクトとして本州�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ェ (U+30A7)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...式高速鉄道は，国家的プロジェ
-                                                  クトとして本州を�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ク (U+30AF)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...高速鉄道は，国家的プロジェク
-                                                  トとして本州を横�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ト (U+30C8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...速鉄道は，国家的プロジェクト
-                                                  として本州を横断�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character と (U+3068)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...鉄道は，国家的プロジェクトと
-                                                  して本州を横断す�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character し (U+3057)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...道は，国家的プロジェクトとし
-                                                  て本州を横断する�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character て (U+3066)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...は，国家的プロジェクトとして
-                                                  本州を横断する形�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 本 (U+672C)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...，国家的プロジェクトとして本
-                                                  州を横断する形で�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 州 (U+5DDE)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...国家的プロジェクトとして本州
-                                                  を横断する形で建�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character を (U+3092)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...家的プロジェクトとして本州を
-                                                  横断する形で建設�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 横 (U+6A2A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...的プロジェクトとして本州を横
-                                                  断する形で建設が�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 断 (U+65AD)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...プロジェクトとして本州を横断
-                                                  する形で建設が進�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character す (U+3059)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ロジェクトとして本州を横断す
-                                                  る形で建設が進め�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character る (U+308B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ジェクトとして本州を横断する
-                                                  形で建設が進めら�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 形 (U+5F62)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ェクトとして本州を横断する形
-                                                  で建設が進められ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character で (U+3067)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...クトとして本州を横断する形で
-                                                  建設が進められて�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 建 (U+5EFA)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...トとして本州を横断する形で建
-                                                  設が進められてい�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 設 (U+8A2D)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...として本州を横断する形で建設
-                                                  が進められている�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character が (U+304C)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...して本州を横断する形で建設が
-                                                  進められている．�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 進 (U+9032)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...て本州を横断する形で建設が進
-                                                  められている．し�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character め (U+3081)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...本州を横断する形で建設が進め
-                                                  られている．しか�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ら (U+3089)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...州を横断する形で建設が進めら
-                                                  れている．しかし�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character れ (U+308C)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...を横断する形で建設が進められ
-                                                  ている．しかし，�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character て (U+3066)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...横断する形で建設が進められて
-                                                  いる．しかし，こ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character い (U+3044)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...断する形で建設が進められてい
-                                                  る．しかし，この�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character る (U+308B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...する形で建設が進められている
-                                                  ．しかし，このよ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ． (U+FF0E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...る形で建設が進められている．
-                                                  しかし，このよう�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character し (U+3057)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...形で建設が進められている．し
-                                                  かし，このような�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character か (U+304B)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...で建設が進められている．しか
-                                                  し，このような大�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character し (U+3057)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...建設が進められている．しかし
-                                                  ，このような大規�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ， (U+FF0C)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...設が進められている．しかし，
-                                                  このような大規模�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character こ (U+3053)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...が進められている．しかし，こ
-                                                  のような大規模プ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character の (U+306E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...進められている．しかし，この
-                                                  ような大規模プロ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character よ (U+3088)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...められている．しかし，このよ
-                                                  うな大規模プロジ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character う (U+3046)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...られている．しかし，このよう
-                                                  な大規模プロジェ�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character な (U+306A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...れている．しかし，このような
-                                                  大規模プロジェク�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 大 (U+5927)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ている．しかし，このような大
-                                                  規模プロジェクト�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 規 (U+898F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...いる．しかし，このような大規
-                                                  模プロジェクトは�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 模 (U+6A21)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...る．しかし，このような大規模
-                                                  プロジェクトは沿�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character プ (U+30D7)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...．しかし，このような大規模プ
-                                                  ロジェクトは沿線�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ロ (U+30ED)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...しかし，このような大規模プロ
-                                                  ジェクトは沿線住�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ジ (U+30B8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...かし，このような大規模プロジ
-                                                  ェクトは沿線住民�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ェ (U+30A7)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...し，このような大規模プロジェ
-                                                  クトは沿線住民の�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ク (U+30AF)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...，このような大規模プロジェク
-                                                  トは沿線住民の理�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character ト (U+30C8)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...このような大規模プロジェクト
-                                                  は沿線住民の理解�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character は (U+306F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...のような大規模プロジェクトは
-                                                  沿線住民の理解と�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 沿 (U+6CBF)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ような大規模プロジェクトは沿
-                                                  線住民の理解と合�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 線 (U+7DDA)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...うな大規模プロジェクトは沿線
-                                                  住民の理解と合意�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 住 (U+4F4F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...な大規模プロジェクトは沿線住
-                                                  民の理解と合意形�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 民 (U+6C11)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...大規模プロジェクトは沿線住民
-                                                  の理解と合意形成�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character の (U+306E)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...規模プロジェクトは沿線住民の
-                                                  理解と合意形成な�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 理 (U+7406)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...模プロジェクトは沿線住民の理
-                                                  解と合意形成なく�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 解 (U+89E3)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...プロジェクトは沿線住民の理解
-                                                  と合意形成なくし�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character と (U+3068)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ロジェクトは沿線住民の理解と
-                                                  合意形成なくして�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 合 (U+5408)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ジェクトは沿線住民の理解と合
-                                                  意形成なくしては�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 意 (U+610F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...ェクトは沿線住民の理解と合意
-                                                  形成なくしては成�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 形 (U+5F62)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...クトは沿線住民の理解と合意形
-                                                  成なくしては成り�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 成 (U+6210)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...トは沿線住民の理解と合意形成
-                                                  なくしては成り立�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character な (U+306A)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...は沿線住民の理解と合意形成な
-                                                  くしては成り立た�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character く (U+304F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...沿線住民の理解と合意形成なく
-                                                  しては成り立たな�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character し (U+3057)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...線住民の理解と合意形成なくし
-                                                  ては成り立たない�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character て (U+3066)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...住民の理解と合意形成なくして
-                                                  は成り立たない．�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character は (U+306F)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...民の理解と合意形成なくしては
-                                                  成り立たない．特�...
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35: LaTeX Error: Unicode character 成 (U+6210)
-               not set up for use with LaTeX.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.35 ...の理解と合意形成なくしては成
-                                                  り立たない．特に�...
-(That makes 100 errors; please try again.) 
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 33.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 3
+3.
+
+(c:/texlive/2025/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 14.41498pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 14.41498pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 33.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 4.805pt on input line 33.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 36.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 36.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 36.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 36.
+
+
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 58.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 58.
+
+LaTeX Warning: Reference `fig:meta_quest3' on page 1 undefined on input line 58
+.
+
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 6.72699pt on input line 74.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 97.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 97.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 97.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <9> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 97.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 97.
+
+Overfull \hbox (121.92438pt too wide) in paragraph at lines 119--120
+ [][] 
+ []
+
+
+
+[1
+
+
+]
+
+File: pic/audio_distortion_flowchart.png Graphic file (type bmp)
+<pic/audio_distortion_flowchart.png>
+
+
+[2]
+
+\dammy@=\skip65
+
+Package caption Warning: Unused \captionsetup[sub] on input line 12.
+See the caption package documentation for explanation.
+
+
+
+[3] (./B4_masuda_20250808.aux)
+ ***********
+pLaTeX2e <2023-02-14>+1, based on
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-19>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2371 strings out of 467816
- 43877 string characters out of 5436431
- 442384 words of memory out of 5000000
- 31039 multiletter control sequences out of 15000+600000
- 626825 words of font info for 40 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 67i,5n,77p,465b,92s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 18123 strings out of 468460
+ 379860 string characters out of 5450936
+ 799069 words of memory out of 5000000
+ 46426 multiletter control sequences out of 15000+600000
+ 639048 words of font info for 94 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 84i,8n,91p,446b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-d:/masuda/3_researchSeminer/20250808/B4_masuda_20250808.tex:35:  ==> Fatal error occurred, no output PDF file produced!
+Output written on B4_masuda_20250808.dvi (3 pages, 38236 bytes).
