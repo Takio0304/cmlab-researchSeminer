@@ -13,6 +13,16 @@
 \captionsetup{labelsep=quad}
 \pagestyle{cmlabw}
 
+
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+%\pagestyle{cmlab}
+\renewcommand{\figurename}{図 -  }
+\renewcommand{\tablename}{表 - }
+\renewcommand{\refname}{参考文献}
+
+
+
 % 必要に応じて追加のパッケージを読み込みます
 % \usepackage{amsmath} % 高度な数式用
 \usepackage{tikz} % フローチャート作成用
@@ -177,12 +187,21 @@ L_{W,str} = a + 30 \log_{10} V
 \subsection{体系的解決手法の検討と効果検証}
 音割れの根本原因を解明するため，原因仮説を体系的に分類し，各仮説に対する検証手法を実施した．\textbf{図-\ref{fig:audio_distortion_solutions}}に音割れ問題の原因仮説分類と検証結果を示す．
 
-\begin{figure}[b]
-	\begin{center}
-		\includegraphics[width=0.5\linewidth]{pic/audio_distortion_flowchart.png}
-		\caption{音割れ問題の原因仮説分類と検証手法}
-		\label{fig:audio_distortion_solutions}
-	\end{center}
+%\begin{figure}[t]
+	%\begin{center}
+		%\includegraphics[width=0.5\linewidth]{pic/audio_distortion_flowchart.png}
+		%\caption{音割れ問題の原因仮説分類と検証手法}
+		%\label{fig:audio_distortion_solutions}
+	%\end{center}
+%\end{figure}
+
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.9\linewidth]{pic/audio_distortion_flowchart.png}
+%\vspace{-0.3cm}
+\caption{音割れ問題の原因仮説分類と検証手法}
+\label{fig:audio_distortion_solutions}
+\end{center}
 \end{figure}
 
 音割れ問題の原因仮説を「ハードウェア問題」と「ソフトウェア問題」の2つに大分類し，各仮説に対して以下の6つの検証手法を実施した：
